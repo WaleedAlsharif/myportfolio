@@ -67,11 +67,10 @@ export function Journey(): React.ReactElement {
                 >
                   {/* ── Timeline node ─────────────────────────────────────── */}
                   <div
-                    className="relative z-10 shrink-0 w-10 h-10 rounded-xl border flex items-center justify-center
+                    className={`relative z-10 shrink-0 w-10 h-10 rounded-xl border flex items-center justify-center
                                 md:absolute md:left-1/2 md:-translate-x-1/2
-                                shadow-card"
+                                shadow-card ${config.bgClass}`}
                     style={{ marginTop: '4px' }}
-                    {...{ className: `relative z-10 shrink-0 w-10 h-10 rounded-xl border flex items-center justify-center md:absolute md:left-1/2 md:-translate-x-1/2 shadow-card ${config.bgClass}` }}
                   >
                     <config.Icon size={16} className={config.colorClass} />
 
