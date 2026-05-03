@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base resets and defaults ──────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-surface text-text-primary font-body;
+    /* Prevent horizontal overflow on mobile */
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar — WebKit */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-3 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/40;
+  }
+
+  /* Selection highlight */
+  ::selection {
+    @apply bg-accent/30 text-text-primary;
+  }
+
+  /* Focus visible ring — accessible */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent/60 ring-offset-2 ring-offset-surface;
+  }
+
+  /* Remove default tap highlight on mobile */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ── Utility layer ─────────────────────────────────────────────────────────── */
+@layer utilities {
+  /* Safe area padding (iPhone notch / home indicator) */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* Text gradient shorthand */
+  .text-gradient-cyan {
+    @apply bg-gradient-to-r from-accent to-cyan-300 bg-clip-text text-transparent;
+  }
+}
