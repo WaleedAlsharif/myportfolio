@@ -38,3 +38,6 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+
+        // create a new workflow to deploy the portfolio to github pages
