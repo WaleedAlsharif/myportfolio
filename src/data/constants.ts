@@ -17,17 +17,15 @@ import type {
 
 // ─── Personal Info ────────────────────────────────────────────────────────────
 export const PERSONAL_INFO = {
-  name: 'Your Name',
-  title: 'Senior Flutter Developer',
+  name: 'WALID ALSHARIF',
+  title: 'Senior Software Engineer & Flutter Developer',
   subtitle: 'Software Architect',
   tagline: 'Building Scalable Mobile & Cross-Platform Solutions',
-  bio: `I architect and ship production-grade Flutter applications with a deep focus on 
-  Clean Architecture, performance, and maintainability. My background in project management 
-  gives me an edge in bridging the gap between technical execution and product vision.`,
-  email: 'your.email@example.com',
-  location: 'Your City, Country',
-  availability: 'Open to senior & lead roles',
-  resumeUrl: '/resume.pdf',
+  bio: `I am a software engineer with a passion for building scalable and maintainable applications. I have a strong background in software architecture and development, and I am a quick learner. I am also a Flutter developer, and I have a strong background in building mobile applications.`,
+  email: 'walidalsharif21@gmail.com',
+  location: 'Turkey, Ankara',
+  availability: 'Open to new opportunities',
+  resumeUrl: 'https://drive.google.com/file/d/1gA1YUMQ-CkSbXwo1jivmTk5SyZ-AFSZF/view?usp=sharing',
 } as const;
 
 // ─── Navigation ───────────────────────────────────────────────────────────────
@@ -49,11 +47,15 @@ export const SKILL_GROUPS: readonly SkillGroup[] = [
     skills: [
       { name: 'Flutter',        level: 'expert'       },
       { name: 'Dart',           level: 'expert'       },
-      { name: 'Bloc / Cubit',   level: 'expert'       },
-      { name: 'Riverpod',       level: 'advanced'     },
-      { name: 'Method Channels',level: 'advanced'     },
-      { name: 'Platform Views', level: 'advanced'     },
-      { name: 'GetX',           level: 'intermediate' },
+      { name: 'Provider',       level: 'expert'     },
+      { name: 'GetX',           level: 'advanced' },
+      { name: 'Bloc / Cubit',   level: 'intermediate'       },
+      { name: 'Riverpod',       level: 'intermediate'     },
+      { name: 'Method Channels',level: 'intermediate'     },
+      { name: 'Platform Views', level: 'intermediate'     },
+      { name: 'Hive',           level: 'advanced' },
+      { name: 'Shared Preferences', level: 'advanced' },
+      { name: 'SQLite',           level: 'advanced' },
     ],
   },
   {
@@ -62,10 +64,9 @@ export const SKILL_GROUPS: readonly SkillGroup[] = [
     icon: '🏗️',
     accentColor: 'violet',
     skills: [
-      { name: 'Clean Architecture', level: 'expert'   },
+      { name: 'Clean Architecture', level: 'intermediate'   },
       { name: 'MVVM',               level: 'expert'   },
       { name: 'SOLID Principles',   level: 'expert'   },
-      { name: 'DDD',                level: 'advanced' },
       { name: 'Repository Pattern', level: 'expert'   },
       { name: 'Dependency Injection', level: 'expert' },
     ],
@@ -78,10 +79,6 @@ export const SKILL_GROUPS: readonly SkillGroup[] = [
     skills: [
       { name: 'Firebase',       level: 'expert'       },
       { name: 'REST APIs',      level: 'expert'       },
-      { name: 'GraphQL',        level: 'advanced'     },
-      { name: 'Node.js',        level: 'intermediate' },
-      { name: 'PostgreSQL',     level: 'intermediate' },
-      { name: 'Supabase',       level: 'advanced'     },
     ],
   },
   {
@@ -96,6 +93,7 @@ export const SKILL_GROUPS: readonly SkillGroup[] = [
       { name: 'Codemagic',      level: 'advanced'     },
       { name: 'Figma',          level: 'intermediate' },
       { name: 'Jira / Linear',  level: 'expert'       },
+      
     ],
   },
 ] as const;
